@@ -1,0 +1,478 @@
+[
+  {
+    "id": "1774941995272",
+    "startIp": "10.0.13.0",
+    "endIp": "10.0.13.255",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995273",
+    "startIp": "10.0.8.182",
+    "endIp": "10.0.8.182",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995274",
+    "startIp": "10.0.8.144",
+    "endIp": "10.0.8.144",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995275",
+    "startIp": "10.0.8.59",
+    "endIp": "10.0.8.59",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995276",
+    "startIp": "10.0.8.74",
+    "endIp": "10.0.8.74",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995277",
+    "startIp": "10.0.8.205",
+    "endIp": "10.0.8.205",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995278",
+    "startIp": "10.0.10.4",
+    "endIp": "10.0.10.4",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995279",
+    "startIp": "10.0.8.137",
+    "endIp": "10.0.8.137",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995280",
+    "startIp": "192.1.1.180",
+    "endIp": "192.1.1.255",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995281",
+    "startIp": "10.0.8.224",
+    "endIp": "10.0.8.224",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995282",
+    "startIp": "10.0.65.1",
+    "endIp": "10.0.65.254",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995283",
+    "startIp": "10.0.10.154",
+    "endIp": "10.0.10.154",
+    "description": null,
+    "isActive": true
+  },
+  {
+    "id": "1774941995284",
+    "startIp": "10.0.73.0",
+    "endIp": "10.0.73.255",
+    "description": "Aerotrim",
+    "isActive": true
+  },
+  {
+    "id": "1774941995285",
+    "startIp": "10.2.65.1",
+    "endIp": "10.2.65.254",
+    "description": "Ayrton",
+    "isActive": true
+  },
+  {
+    "id": "1774941995286",
+    "startIp": "10.0.129.1",
+    "endIp": "10.0.129.255",
+    "description": "De Neef Heist",
+    "isActive": true
+  },
+  {
+    "id": "1774941995287",
+    "startIp": "10.0.120.1",
+    "endIp": "10.0.121.255",
+    "description": "De Neef Kallo",
+    "isActive": true
+  },
+  {
+    "id": "1774941995288",
+    "startIp": "10.5.65.1",
+    "endIp": "10.5.65.254",
+    "description": "Frencken",
+    "isActive": true
+  },
+  {
+    "id": "1774941995289",
+    "startIp": "10.1.65.1",
+    "endIp": "10.1.65.254",
+    "description": "Leverkusen",
+    "isActive": true
+  },
+  {
+    "id": "1774941995290",
+    "startIp": "192.168.3.202",
+    "endIp": "192.168.3.202",
+    "description": "Leverkusen Legacy",
+    "isActive": true
+  },
+  {
+    "id": "1774941995291",
+    "startIp": "10.5.73.1",
+    "endIp": "10.5.73.255",
+    "description": "Momentive BOZ",
+    "isActive": true
+  },
+  {
+    "id": "1774941995292",
+    "startIp": "10.9.81.1",
+    "endIp": "10.9.81.254",
+    "description": "PLPIBO",
+    "isActive": true
+  },
+  {
+    "id": "1774941995293",
+    "startIp": "192.168.20.36",
+    "endIp": "192.168.20.36",
+    "description": "PLPIBO-Legacy",
+    "isActive": true
+  },
+  {
+    "id": "1774941995294",
+    "startIp": "10.9.89.1",
+    "endIp": "10.9.89.254",
+    "description": "PLSUBO",
+    "isActive": true
+  },
+  {
+    "id": "1774941995295",
+    "startIp": "10.0.96.1",
+    "endIp": "10.0.103.254",
+    "description": "Rectavit",
+    "isActive": true
+  },
+  {
+    "id": "1774941995296",
+    "startIp": "10.11.72.1",
+    "endIp": "10.11.72.253",
+    "description": "SISRTK CLIENT",
+    "isActive": true
+  },
+  {
+    "id": "1774941995297",
+    "startIp": "10.11.73.1",
+    "endIp": "10.11.73.253",
+    "description": "SISRTK INFRA",
+    "isActive": true
+  },
+  {
+    "id": "1774941995298",
+    "startIp": "10.28.65.1",
+    "endIp": "10.28.65.254",
+    "description": "Souda RU",
+    "isActive": true
+  },
+  {
+    "id": "1774941995299",
+    "startIp": "10.26.65.1",
+    "endIp": "10.26.65.254",
+    "description": "Soudal Bulgarië",
+    "isActive": true
+  },
+  {
+    "id": "1774941995300",
+    "startIp": "10.32.65.0",
+    "endIp": "10.32.65.255",
+    "description": "soudal Canada",
+    "isActive": true
+  },
+  {
+    "id": "1774941995301",
+    "startIp": "10.9.73.1",
+    "endIp": "10.9.73.254",
+    "description": "Soudal Czosnow",
+    "isActive": true
+  },
+  {
+    "id": "1774941995302",
+    "startIp": "10.8.73.0",
+    "endIp": "10.8.73.255",
+    "description": "Soudal Denemarken Alleroed",
+    "isActive": true
+  },
+  {
+    "id": "1774941995303",
+    "startIp": "10.8.65.1",
+    "endIp": "10.8.65.254",
+    "description": "Soudal Denemarken Veje",
+    "isActive": true
+  },
+  {
+    "id": "1774941995304",
+    "startIp": "10.31.73.1",
+    "endIp": "10.31.73.254",
+    "description": "Soudal FIN",
+    "isActive": true
+  },
+  {
+    "id": "1774941995305",
+    "startIp": "10.31.65.0",
+    "endIp": "10.31.65.255",
+    "description": "Soudal Finland",
+    "isActive": true
+  },
+  {
+    "id": "1774941995306",
+    "startIp": "10.29.65.0",
+    "endIp": "10.29.65.255",
+    "description": "Soudal Ierland",
+    "isActive": true
+  },
+  {
+    "id": "1774941995307",
+    "startIp": "10.7.64.1",
+    "endIp": "10.7.71.254",
+    "description": "Soudal Italie",
+    "isActive": true
+  },
+  {
+    "id": "1774941995308",
+    "startIp": "10.17.65.1",
+    "endIp": "10.17.65.254",
+    "description": "Soudal Marokko",
+    "isActive": true
+  },
+  {
+    "id": "1774941995309",
+    "startIp": "10.10.65.1",
+    "endIp": "10.10.65.254",
+    "description": "soudal Noorwegen",
+    "isActive": true
+  },
+  {
+    "id": "1774941995310",
+    "startIp": "10.6.65.1",
+    "endIp": "10.6.65.254",
+    "description": "soudal Oostenrijk",
+    "isActive": true
+  },
+  {
+    "id": "1774941995311",
+    "startIp": "10.9.64.1",
+    "endIp": "10.9.65.254",
+    "description": "Soudal Pionki",
+    "isActive": true
+  },
+  {
+    "id": "1774941995312",
+    "startIp": "10.16.65.1",
+    "endIp": "10.16.65.254",
+    "description": "Soudal Portugal",
+    "isActive": true
+  },
+  {
+    "id": "1774941995313",
+    "startIp": "10.3.72.1",
+    "endIp": "10.3.79.254",
+    "description": "Soudal Spanje",
+    "isActive": true
+  },
+  {
+    "id": "1774941995314",
+    "startIp": "10.12.64.1",
+    "endIp": "10.12.65.254",
+    "description": "soudal Turkije",
+    "isActive": true
+  },
+  {
+    "id": "1774941995315",
+    "startIp": "192.1.10.1",
+    "endIp": "192.1.10.255",
+    "description": "Soudal Turnhout",
+    "isActive": true
+  },
+  {
+    "id": "1774941995316",
+    "startIp": "10.0.10.0",
+    "endIp": "10.0.10.255",
+    "description": "Soudal Turnhout Print",
+    "isActive": true
+  },
+  {
+    "id": "1774941995317",
+    "startIp": "10.4.73.1",
+    "endIp": "10.4.73.254",
+    "description": "soudal UK",
+    "isActive": true
+  },
+  {
+    "id": "1774941995318",
+    "startIp": "10.14.65.0",
+    "endIp": "10.14.65.255",
+    "description": "Soudal Us",
+    "isActive": true
+  },
+  {
+    "id": "1774941995319",
+    "startIp": "10.13.64.0",
+    "endIp": "10.13.72.255",
+    "description": "Soudal Zuid Afrika",
+    "isActive": true
+  },
+  {
+    "id": "1774941995320",
+    "startIp": "10.21.64.1",
+    "endIp": "10.21.71.254",
+    "description": "Soudal Zweden",
+    "isActive": true
+  },
+  {
+    "id": "1774941995321",
+    "startIp": "10.4.64.1",
+    "endIp": "10.4.71.254",
+    "description": "Template Range 11",
+    "isActive": true
+  },
+  {
+    "id": "1774941995322",
+    "startIp": "10.5.72.1",
+    "endIp": "10.5.72.254",
+    "description": "Template Range 15",
+    "isActive": true
+  },
+  {
+    "id": "1774941995323",
+    "startIp": "10.0.64.1",
+    "endIp": "10.0.71.254",
+    "description": "Template Range 3",
+    "isActive": true
+  },
+  {
+    "id": "1774941995324",
+    "startIp": "10.22.64.1",
+    "endIp": "10.22.71.254",
+    "description": "Template Range 35",
+    "isActive": true
+  },
+  {
+    "id": "1774941995325",
+    "startIp": "192.168.0.1",
+    "endIp": "192.168.0.254",
+    "description": "Template Range 38",
+    "isActive": true
+  },
+  {
+    "id": "1774941995326",
+    "startIp": "10.0.72.1",
+    "endIp": "10.0.79.254",
+    "description": "Template Range 4",
+    "isActive": true
+  },
+  {
+    "id": "1774941995327",
+    "startIp": "192.168.2.1",
+    "endIp": "192.168.2.254",
+    "description": "Template Range 40",
+    "isActive": true
+  },
+  {
+    "id": "1774941995328",
+    "startIp": "192.168.13.1",
+    "endIp": "192.168.13.254",
+    "description": "Template Range 44",
+    "isActive": true
+  },
+  {
+    "id": "1774941995329",
+    "startIp": "192.168.30.1",
+    "endIp": "192.168.30.254",
+    "description": "Template Range 46",
+    "isActive": true
+  },
+  {
+    "id": "1774941995330",
+    "startIp": "192.168.34.1",
+    "endIp": "192.168.34.254",
+    "description": "Template Range 47",
+    "isActive": true
+  },
+  {
+    "id": "1774941995331",
+    "startIp": "192.168.36.1",
+    "endIp": "192.168.36.254",
+    "description": "Template Range 48",
+    "isActive": true
+  },
+  {
+    "id": "1774941995332",
+    "startIp": "192.168.39.1",
+    "endIp": "192.168.39.254",
+    "description": "Template Range 49",
+    "isActive": true
+  },
+  {
+    "id": "1774941995333",
+    "startIp": "192.168.41.1",
+    "endIp": "192.168.41.254",
+    "description": "Template Range 51",
+    "isActive": true
+  },
+  {
+    "id": "1774941995334",
+    "startIp": "192.168.47.1",
+    "endIp": "192.168.47.254",
+    "description": "Template Range 53",
+    "isActive": true
+  },
+  {
+    "id": "1774941995335",
+    "startIp": "192.168.50.1",
+    "endIp": "192.168.50.254",
+    "description": "Template Range 55",
+    "isActive": true
+  },
+  {
+    "id": "1774941995336",
+    "startIp": "192.168.51.1",
+    "endIp": "192.168.51.254",
+    "description": "Template Range 57",
+    "isActive": true
+  },
+  {
+    "id": "1774941995337",
+    "startIp": "192.168.92.1",
+    "endIp": "192.168.92.254",
+    "description": "Template Range 59",
+    "isActive": true
+  },
+  {
+    "id": "1774941995338",
+    "startIp": "10.0.81.0",
+    "endIp": "10.0.81.255",
+    "description": "VanRooijen",
+    "isActive": true
+  },
+  {
+    "id": "1774942950259360wia",
+    "startIp": "192.168.0.1",
+    "endIp": "192.168.0.253",
+    "description": "test",
+    "isActive": true
+  }
+]

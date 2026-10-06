@@ -1,0 +1,206 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Printer {
+  id                        String              @id @default(cuid())
+  universalId               String?             @unique
+  macAddress                String              @unique
+  ipAddress                 String              @unique
+  name                      String
+  hostname                  String?
+  location                  String?
+  model                     String?
+  manufacturer              String?
+  firmwareVersion           String?
+  latestFirmwareVersion     String?
+  latestFirmwareFetchedAt   DateTime?
+  serialNumber              String?
+  tonerBlack                Int?
+  tonerCyan                 Int?
+  tonerMagenta              Int?
+  tonerYellow               Int?
+  paperTray1                String?
+  paperTray2                String?
+  pageCount                 Int?
+  pageCountCapturedAt       DateTime?
+  msccRegistrationStatus    String              @default("Unregistered")
+  msccRegistrationUpdatedAt DateTime?
+  status                    String              @default("Online")
+  lastSeen                  DateTime            @default(now())
+  encryptedEwsPassword      String?
+  tonerDeliveryItems        TonerDeliveryItem[]
+  usageSamples              PrinterUsageSample[]
+}
+
+model PrinterUsageSample {
+  id          String   @id @default(cuid())
+  printerId   String
+  pageCount   Int
+  capturedAt  DateTime @default(now())
+
+  printer Printer @relation(fields: [printerId], references: [id], onDelete: Cascade)
+
+  @@index([printerId, capturedAt])
+  @@index([capturedAt])
+}
+
+model FirmwareUpdateJob {
+  id                    String    @id @default(cuid())
+  requestedBy           String
+  scope                 String
+  printerIds            String?
+  targetFirmwareVersion String?
+  scheduledFor          DateTime?
+  status                String    @default("Queued")
+  lastError             String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+}
+
+model HpFirmwareCache {
+  id                    String   @id @default(cuid())
+  modelKey              String   @unique
+  modelName             String?
+  sourceUrl             String?
+  productLineCode       String?
+  cc                    String?
+  lc                    String?
+  osName                String?
+  osTMSId               String?
+  productSeriesOid      Int?
+  productNumberOid      Int?
+  platformId            String?
+  latestFirmwareVersion String?
+  latestFirmwareTitle   String?
+  downloadUrl           String?
+  fileName              String?
+  fileSize              String?
+  fetchedAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+}
+
+model AppUser {
+  id             String    @id @default(cuid())
+  email          String    @unique
+  name           String?
+  role           String    @default("user")
+  isActive       Boolean   @default(true)
+  deletedAt      DateTime?
+  lastSignedInAt DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
+
+model UserBadgeMapping {
+  id            String   @id @default(cuid())
+  badgeHex      String   @unique
+  userEmail     String
+  entraObjectId String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model SiteCodeLocation {
+  id        String   @id @default(cuid())
+  siteCode  String   @unique
+  location  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ClusterConfig {
+  key                  String    @id
+  enabled              Boolean   @default(false)
+  nodeName             String
+  peerIpAddress        String?
+  peerName             String?
+  role                 String    @default("primary")
+  status               String    @default("idle")
+  sharedSecret         String?
+  lastHeartbeatAt      DateTime?
+  lastSyncAt           DateTime?
+  promotionRequestedAt DateTime?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+}
+
+model ScheduledJob {
+  id             String            @id @default(cuid())
+  title          String
+  functionKey    String
+  recurrenceType String
+  dayOfWeek      Int?
+  dayOfMonth     Int?
+  timeOfDay      String
+  enabled        Boolean           @default(true)
+  nextRunAt      DateTime?
+  lastRunAt      DateTime?
+  lastStatus     String            @default("idle")
+  lastError      String?
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  runs           ScheduledJobRun[]
+
+  @@index([enabled, nextRunAt])
+}
+
+model ScheduledJobRun {
+  id             String    @id @default(cuid())
+  scheduledJobId String
+  jobTitle       String
+  functionKey    String
+  recurrenceType String
+  scheduledForAt DateTime?
+  startedAt      DateTime
+  finishedAt     DateTime?
+  status         String
+  message        String?
+  error          String?
+  createdAt      DateTime  @default(now())
+
+  scheduledJob ScheduledJob @relation(fields: [scheduledJobId], references: [id], onDelete: Cascade)
+
+  @@index([scheduledJobId, startedAt])
+  @@index([startedAt])
+}
+
+model TonerWorkflowConfig {
+  key               String   @id @default("singleton")
+  partnerRecipients String?
+  sharedMailbox     String?
+  updatedAt         DateTime @updatedAt
+}
+
+model TonerDeliveryBatch {
+  id          String              @id @default(cuid())
+  status      String              @default("Pending")
+  sentAt      DateTime?
+  confirmedAt DateTime?
+  onboardedAt DateTime?
+  completedAt DateTime?
+  items       TonerDeliveryItem[]
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+}
+
+model TonerDeliveryItem {
+  id               String             @id @default(cuid())
+  batchId          String
+  printerId        String
+  serialNumber     String?
+  ipAddress        String?
+  hostname         String?
+  ewsStatus        String             @default("Pending")
+  onboardingStatus String             @default("Pending")
+  msccStatus       String             @default("Pending")
+  isConfirmed      Boolean            @default(false)
+  batch            TonerDeliveryBatch @relation(fields: [batchId], references: [id], onDelete: Cascade)
+  printer          Printer            @relation(fields: [printerId], references: [id], onDelete: Cascade)
+}

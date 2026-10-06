@@ -1,0 +1,10 @@
+Beste,
+
+De offerte voor de volgende serienummers is ondertekend en kan verder verwerkt worden:
+
+[PrinterList]
+
+Request: [RequestID]
+
+Met vriendelijke groet,
+IT-team Soudal

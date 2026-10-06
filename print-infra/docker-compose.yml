@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  print-portal:
+    image: git.pefki.xyz/pefki/print-infra:latest
+    build:
+      context: ./print-portal
+      dockerfile: Dockerfile
+    container_name: nextjs-print-portal
+    restart: always
+    ports:
+      - "3000:3000" # Expose the portal on HTTPS port 3000 of the host server
+    env_file:
+      - ./print-portal/.env.local
+    environment:
+      - NODE_ENV=production
+      - HOSTNAME=0.0.0.0
+      - PORT=3000
+      - DATABASE_URL=file:/app/data/dev.db
+      - MAIL_FROM=printerregistration@soudal.com
+      - DCC_PARTNER_RECIPIENTS=printing@vanroey.be
+      - DCC_SHARED_MAILBOX=printerregistration@soudal.com
+    volumes:
+      # We mount standard directories/files from the server so that reboots don't lose the DB or Subnets!
+      - print-portal-data:/app/data
+
+
+volumes:
+  print-portal-data:
