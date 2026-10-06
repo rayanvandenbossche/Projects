@@ -1,0 +1,90 @@
+# Samenwerkingscontract – Development & Deployment
+
+## Partijen
+
+**Deployment Team:**  
+Kjente Valgaeren, Amir Sherzad, Jarne Mariën, Rayan Van den Bossche
+
+**Development Teams:**  
+3 teams van elk 4 developers
+
+---
+
+## Doel
+Het vastleggen van heldere afspraken over het aanleveren, deployen en samenwerken rond applicaties.
+
+---
+
+## 1. Rollen en Verantwoordelijkheden
+
+### 1.1 Development Teams
+De drie Development Teams zijn verantwoordelijk voor:
+
+- Het ontwikkelen van applicaties en features  
+- Het tijdig en volledig aanleveren van releaseversies  
+- Het aanleveren van duidelijke release notes en documentatie  
+- Het testen en goedkeuren van de release vóór aanlevering  
+- Het beschikbaar zijn bij vragen of problemen tijdens een deployment  
+
+### 1.2 Deployment Team
+Het Deployment Team (4 personen) is verantwoordelijk voor:
+
+- Het uitvoeren van deployments naar test-, acceptatie- en productieomgevingen  
+- Het controleren of aangeleverde releases compleet en correct zijn  
+- Het uitvoeren van afgesproken deploymentprocedures  
+- Het terugkoppelen van fouten, blokkades of afwijkingen  
+- Het waarborgen van stabiliteit, continuïteit en veiligheid tijdens deployments  
+
+---
+
+## 2. Aanlevering & Planning
+
+- Development Teams leveren releases aan **minimaal 3 werkdagen** voor de geplande deployment  
+- Aanlevering bevat: build/package, release notes, testresultaten, documentatie  
+- Grote wijzigingen worden vooraf afgestemd met het Deployment Team  
+- Deployments worden gepland in overleg zodat beschikbaarheid gegarandeerd is  
+
+---
+
+## 3. Communicatie
+
+- Bij elke release benoemt het Dev Team één aanspreekpunt  
+- Deployment Team communiceert status, bevindingen en eventuele blokkades direct terug  
+- Urgente issues worden via het afgesproken kanaal (bijv. Teams/Slack) gemeld  
+
+---
+
+## 4. Acceptatie en Foutafhandeling
+
+- Het Dev Team lost fouten in de aangeleverde release zo snel mogelijk op  
+- Het Deployment Team geeft duidelijke foutrapportages terug  
+- Deployments worden pas uitgevoerd na akkoord van het Development Team  
+
+---
+
+## 5. Vertrouwelijkheid & Toegang
+
+- Alle informatie en toegang tot omgevingen zijn vertrouwelijk  
+- Toegang wordt alleen gebruikt voor afgesproken werkzaamheden  
+
+---
+
+## 6. Geldigheid
+
+Dit contract geldt totdat een van de partijen een wijziging of beëindiging voorstelt.  
+Aanpassingen worden schriftelijk overeengekomen.
+
+---
+
+## 7. Handtekeningen (naam is voldoende)
+
+- Amir  
+- Kjente  
+- Jarne  
+- Rayan  
+- Tiebe (Team 3)  
+- Seppe (Team 3)  
+- Bent (Team 3)  
+- Rob (Team 3)  
+
+---

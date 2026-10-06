@@ -1,0 +1,4 @@
+apiVersion: v2
+name: gke-resources
+version: 1.0.0
+description: GKE ManagedCertificate + FrontendConfig
